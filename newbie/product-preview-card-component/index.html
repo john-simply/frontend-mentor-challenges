@@ -25,13 +25,13 @@
   <body>
     <main>
       <div class="product-preview-card">
-        <figure class="product-preview-card__image-container">
-          <img
-            src="./images/image-product-desktop.jpg"
-            srcset="./images/image-product-mobile.jpg 2x"
-            alt="Gabrielle Essence Eau De Parfum in a bottle"
+        <picture class="product-preview-card__image-container">
+          <source
+            media="(max-width: 768px)"
+            srcset="images/image-product-mobile.jpg"
           />
-        </figure>
+          <img src="images/image-product-desktop.jpg" alt="..." />
+        </picture>
 
         <div class="product-preview-card__content">
           <span class="preheading">perfume</span>
