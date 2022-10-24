@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -14,12 +13,16 @@
 
     <link rel="stylesheet" href="./style.css" />
 
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+
+    <!-- scripts -->
+    <script src="./scripts/app.js" defer></script>
 
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
@@ -29,13 +32,12 @@
         <img src="./images/logo.svg" alt="loopstudios logo" />
       </figure>
 
-      <button id="hamburger" class="hamburger">
-        <!-- <img src="./images/icon-hamburger.svg" alt="" /> -->
-        <img src="./images/icon-close.svg" alt="" />
+      <button role="switch" id="hamburger" class="hamburger">
+        <img src="./images/icon-hamburger.svg" alt="" />
       </button>
 
       <nav class="main-navigation">
-        <ul class="main-navigation__list">
+        <ul class="main-navigation__list" aria-expanded="false">
           <li>
             <a href="/junior/loopstudios-landing-page/">About</a>
           </li>
@@ -54,5 +56,7 @@
         </ul>
       </nav>
     </header>
+
+    <main class="homepage-content"></main>
   </body>
 </html>
