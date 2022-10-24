@@ -11,6 +11,7 @@
 
 ——————————————————————-*/
 
+/*===VARIABLES===*/
 :root {
   // colors
   --clr-white: hsl(0, 0%, 100%);
@@ -23,11 +24,13 @@
   --font-josefin: "Josefin Sans", sans-serif;
 }
 
+/*===BASE ELEMENTS===*/
 body {
   font-family: var(--font-josefin);
   font-size: calc(1rem - 1px);
 }
 
+/*===MAIN NAVIGATION===*/
 .main-header {
   background-color: red;
   display: flex;
@@ -62,8 +65,6 @@ body {
 
   &__list {
     margin-left: 2rem;
-    // margin-top: -2rem;
-
     li {
       margin-bottom: 2rem;
       a {
