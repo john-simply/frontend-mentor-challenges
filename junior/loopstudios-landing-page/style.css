@@ -264,7 +264,7 @@ body {
 }
 .hero-landing__content-wrapper .content {
   border: 2px solid var(--clr-white);
-  padding: 2rem;
+  padding: clamp(1rem, 5vw, 2rem);
 }
 .hero-landing__content-wrapper .content .heading {
   font-size: 2.6rem;
