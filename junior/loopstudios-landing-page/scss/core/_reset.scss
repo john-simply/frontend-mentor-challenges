@@ -124,6 +124,10 @@ table {
 }
 
 /* ===CUSTOM ADDITIONS=== */
+* {
+  box-sizing: border-box;
+}
+
 button,
 input,
 a {
@@ -133,4 +137,8 @@ a {
 a,
 button {
   cursor: pointer;
+}
+
+img {
+  display: block;
 }
