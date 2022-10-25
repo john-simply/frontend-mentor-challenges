@@ -234,3 +234,51 @@ body {
     text-align: center;
   }
 }
+
+/*===FOOTER===*/
+.main-footer {
+  background-color: var(--clr-black);
+  margin-top: 5rem;
+
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .company-logo {
+    width: 200px;
+  }
+
+  &__links {
+    text-align: center;
+    margin-top: 1rem;
+    .link {
+      color: var(--clr-white);
+      font-family: var(--font-alata);
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    gap: 1rem;
+
+    margin-top: 4rem;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__copy {
+    color: var(--clr-dark-gray);
+    font-family: var(--font-alata);
+
+    margin-top: 1.5rem;
+  }
+}

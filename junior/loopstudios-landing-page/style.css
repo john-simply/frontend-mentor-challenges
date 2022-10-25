@@ -344,4 +344,43 @@ body {
 .our-creations .button-wrapper {
   margin-top: 2rem;
   text-align: center;
+}
+
+/*===FOOTER===*/
+.main-footer {
+  background-color: var(--clr-black);
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-footer .company-logo {
+  width: 200px;
+}
+.main-footer__links {
+  text-align: center;
+  margin-top: 1rem;
+}
+.main-footer__links .link {
+  color: var(--clr-white);
+  font-family: var(--font-alata);
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.main-footer__social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+.main-footer__social-links img {
+  width: 32px;
+  height: 32px;
+}
+.main-footer__copy {
+  color: var(--clr-dark-gray);
+  font-family: var(--font-alata);
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
