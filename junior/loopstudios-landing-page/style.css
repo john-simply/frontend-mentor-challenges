@@ -229,12 +229,39 @@ body {
   text-transform: uppercase;
 }
 
-.hero-landing__image-wrapper {
+/*===HOMEPAGE HERO===*/
+.hero-landing {
   height: 100vh;
+}
+.hero-landing__image-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  height: 100%;
 }
 .hero-landing__image-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}/*# sourceMappingURL=style.css.map */
+}
+.hero-landing__content-wrapper {
+  width: calc(100% - 4rem);
+  height: 100%;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  justify-content: flex-start;
+}
+.hero-landing__content-wrapper .content {
+  border: 2px solid var(--clr-white);
+  padding: 2rem;
+}
+.hero-landing__content-wrapper .content .heading {
+  font-size: 2.6rem;
+  color: var(--clr-white);
+  text-transform: uppercase;
+}
+
+/*===CONTENT BLOCK===*//*# sourceMappingURL=style.css.map */
