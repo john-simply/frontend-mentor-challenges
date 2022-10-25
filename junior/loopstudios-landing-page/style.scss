@@ -24,6 +24,18 @@
   --font-josefin: "Josefin Sans", sans-serif;
 }
 
+.btn-primary {
+  display: inline-block;
+
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--clr-black);
+
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: var(--font-alata);
+  letter-spacing: 5px;
+}
+
 /*===BASE ELEMENTS===*/
 html,
 body {
@@ -104,11 +116,6 @@ body {
     z-index: -1;
 
     height: 100%;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 
   &__content-wrapper {
@@ -171,22 +178,59 @@ body {
 
 /*===OUR CREATIONS===*/
 .our-creations {
+  margin-top: 5rem;
   &__wrapper {
+    width: calc(100% - 4rem);
+    margin-inline: auto;
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 3rem;
   }
 
   .creation {
     .creation-image-wrapper {
-      img {
+      position: relative;
+
+      .gradient {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(
+          45deg,
+          rgb(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.2)
+        );
       }
 
       .caption {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+
+        font-size: 1.6rem;
+        color: var(--clr-white);
+        text-transform: uppercase;
       }
     }
+  }
+
+  .button-wrapper {
+    margin-top: 2rem;
+    text-align: center;
   }
 }
