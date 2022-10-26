@@ -1,7 +1,6 @@
-// DOM elements
 const hamburger = document.getElementById("hamburger");
-
 let isOpen = false;
+
 function toggleNavigation() {
   const navigation = document.querySelector(".main-navigation");
   hamburger.style.opacity = 0;
