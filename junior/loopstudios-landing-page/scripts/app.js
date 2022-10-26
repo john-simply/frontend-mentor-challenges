@@ -2,10 +2,12 @@ const hamburger = document.getElementById("hamburger");
 let isOpen = false;
 
 function toggleNavigation() {
-  const navigation = document.querySelector(".main-navigation");
+  isOpen = !isOpen;
   hamburger.style.opacity = 0;
+  document.querySelector("body").classList.toggle("overflow");
 
-  navigation.classList.toggle("open");
+  // animate
+  isOpen ? menuTimeline.play() : menuTimeline.reverse();
 
   setTimeout(() => {
     isOpen
@@ -14,8 +16,6 @@ function toggleNavigation() {
 
     hamburger.style.opacity = 1;
   }, 300);
-
-  isOpen = !isOpen;
 }
 
 hamburger.addEventListener("click", toggleNavigation);

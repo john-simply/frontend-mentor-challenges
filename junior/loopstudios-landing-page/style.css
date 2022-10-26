@@ -183,6 +183,10 @@ img {
   letter-spacing: 5px;
 }
 
+.overflow {
+  overflow-y: hidden;
+}
+
 /*===BASE ELEMENTS===*/
 html,
 body {
@@ -226,7 +230,6 @@ body {
   place-items: center;
   justify-content: flex-start;
   transform: translateX(100%);
-  transition: transform 0.2s ease-in-out;
 }
 .main-navigation.open {
   transform: translateX(0%);
